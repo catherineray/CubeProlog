@@ -1,3 +1,4 @@
+%Edge cna be either 0 or 1
 color(0).
 color(1).
 
@@ -11,6 +12,7 @@ even(A, B) :-
   0 is A mod 2,
   0 is B mod 2.
   
+
 evenSum(A, B, C, D) :- 
   Sum = A + B + C + D,
   even(Sum).
@@ -19,7 +21,9 @@ oddSum(A, B, C, D) :-
   Sum = A + B + C + D,
   odd(Sum).
   
-square(E1, E2, E3, E4) :- color(E1), color(E2), color(E3), color(E4), 
+%check to make sure the sum of the edges of the 4-cycle is odd
+square(E1, E2, E3, E4) :- 
+    color(E1), color(E2), color(E3), color(E4), %seperates the statements that must be satisfied
     oddSum(E1, E2, E3, E4).
 
 cube(Ee00, E0e0, E00e,
