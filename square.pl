@@ -22,7 +22,7 @@ oddSum(A, B, C, D) :-
   
 %Check that the sum of the edges of a 4-cycle is odd
 square(E1, E2, E3, E4) :- 
-    color(E1), color(E2), color(E3), color(E4), 
+    color(E1), color(E2), color(E3), color(E4),  %seperates the statements that must be satisfied
     oddSum(E1, E2, E3, E4).
 
 cube(Ee00, E0e0, E00e,
