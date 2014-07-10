@@ -38,6 +38,13 @@ cube(Ee00, E0e0, E00e,
 	 square(Ee00, E00e, E10e, Ee01),
 	 square(E01e, Ee10, E11e, Ee11),
 	 square(Ee01, Ee11, E0e1, E1e1).
+
+%Count the number of cubes:	
+%findall ([12 edges], cube(12 edges), list)
+%name variables
+%name something that does things
+%name where the elements go
+%length(list name, length of list variable)
 	 
 dim4(Ee110, E101e, E0e11, E00e1, E11e0, E11e1, E10e1, Ee010, E0e01, Ee100, Ee111, E00e0, E111e, E110e, E0e00, E011e, Ee101, Ee011, E001e, Ee000, E010e, E01e1, E100e, E1e00, E1e11, E000e, Ee001, E0e10, E10e0, E1e01, E1e10, E01e0) :-
 	square(E000e, E001e, E00e0, E00e1),
