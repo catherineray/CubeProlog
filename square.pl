@@ -25,6 +25,9 @@ square(E1, E2, E3, E4) :-
     color(E1), color(E2), color(E3), color(E4),  %seperates the statements that must be satisfied
     oddSum(E1, E2, E3, E4).
 
+%coordinates on the edge of the cube is a 3 tuple, (x,y,z) <=> Exyz
+%Ee00, x = e, y = 0, z=0 
+%where e is a place holder for the slot that is changing, the other 2 slots are fixed
 cube(Ee00, E0e0, E00e,
      Ee01, E0e1, E01e,
 	 Ee10, E1e0, E10e,
