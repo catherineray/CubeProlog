@@ -1,3 +1,4 @@
+%Edges can be either 0 or 1
 color(0).
 color(1).
 
@@ -19,7 +20,9 @@ oddSum(A, B, C, D) :-
   Sum = A + B + C + D,
   odd(Sum).
   
-square(E1, E2, E3, E4) :- color(E1), color(E2), color(E3), color(E4), 
+%Check that the sum of the edges of a 4-cycle is odd
+square(E1, E2, E3, E4) :- 
+    color(E1), color(E2), color(E3), color(E4), 
     oddSum(E1, E2, E3, E4).
 
 cube(Ee00, E0e0, E00e,
